@@ -41,9 +41,9 @@ Pastikan Anda memiliki **Python 3.9** atau yang lebih baru.
 
 Jalankan file utama untuk melakukan pengujian sederhana
 
-    ```bash
-    python main.py
-    ```
+```bash
+python main.py
+```
 
 ### 4. Pengujian
 
@@ -51,7 +51,7 @@ Hasil pengujian memastikan bahwa semua komponen bekerja dengan benar:
 - Bentuk tensor sesuai spesifikasi `[batch, seq_len, vocab_size]`.  
 - Distribusi softmax valid, dengan jumlah probabilitas per batch = 1.  
 - Causal mask berfungsi dengan benar — *future tokens* tidak terlihat pada area di atas diagonal.  
-- Model mampu memprediksi token berikutnya dengan benar (*Top-5 tokens* dengan probabilitas tertinggi).
+- Model mampu memprediksi token berikutnya (*Top-5 tokens* dengan probabilitas tertinggi).
 
 
 **Catatan Tambahan**: 
@@ -62,6 +62,6 @@ Hasil pengujian memastikan bahwa semua komponen bekerja dengan benar:
 
 ## Visualisasi Attention Heatmap
 Gambar berikut menunjukkan hasil visualisasi *attention heatmap* dari model GPT-style yang dibangun.  
-Area berwarna terang menunjukkan *active attention* antar token (past dan current positions),csementara area gelap di atas diagonal menunjukkan *masked future tokens*.
+Area berwarna terang menunjukkan *active attention* antar token (past dan current positions), sementara area gelap di atas diagonal menunjukkan *masked future tokens*.
 
 ![Attention Heatmap](https://github.com/nurrochman954/transformer/blob/main/Visualisasi%20attention%20heatmap.png)
